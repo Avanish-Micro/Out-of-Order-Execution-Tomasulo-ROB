@@ -1,0 +1,158 @@
+Time resolution is 1 ps
+=== Cycle 0 ===
+  PC=0  IF/ID_valid=0  IF/ID_instr=00000000  IF/ID_pc=0
+  ID/EX_valid=0  ID/EX_rd=0  ID/EX_reg_write=0  ID/EX_imm=0  ID/EX_use_imm=0
+  EX/MEM_valid=0  EX/MEM_rd=0  EX/MEM_reg_write=0  EX/MEM_alu=0
+  MEM/WB_valid=0  MEM/WB_rd=0  MEM/WB_reg_write=0  MEM/WB_alu=0
+  WB: en=0  rd=0  data=0
+  Reg[1]=0  Reg[2]=0  Reg[5]=0
+  fwd_rs1=0  fwd_rs2=0  alu_result=0
+=== Cycle 1 ===
+  PC=4  IF/ID_valid=1  IF/ID_instr=00500093  IF/ID_pc=0
+  ID/EX_valid=0  ID/EX_rd=0  ID/EX_reg_write=0  ID/EX_imm=0  ID/EX_use_imm=0
+  EX/MEM_valid=0  EX/MEM_rd=0  EX/MEM_reg_write=0  EX/MEM_alu=0
+  MEM/WB_valid=0  MEM/WB_rd=0  MEM/WB_reg_write=0  MEM/WB_alu=0
+  WB: en=0  rd=0  data=0
+  Reg[1]=0  Reg[2]=0  Reg[5]=0
+  fwd_rs1=0  fwd_rs2=0  alu_result=0
+=== Cycle 2 ===
+  PC=8  IF/ID_valid=1  IF/ID_instr=00108133  IF/ID_pc=4
+  ID/EX_valid=1  ID/EX_rd=1  ID/EX_reg_write=1  ID/EX_imm=5  ID/EX_use_imm=1
+  EX/MEM_valid=0  EX/MEM_rd=0  EX/MEM_reg_write=0  EX/MEM_alu=0
+  MEM/WB_valid=0  MEM/WB_rd=0  MEM/WB_reg_write=0  MEM/WB_alu=0
+  WB: en=0  rd=0  data=0
+  Reg[1]=0  Reg[2]=0  Reg[5]=0
+  fwd_rs1=0  fwd_rs2=0  alu_result=5
+=== Cycle 3 ===
+  PC=c  IF/ID_valid=1  IF/ID_instr=001101b3  IF/ID_pc=8
+  ID/EX_valid=1  ID/EX_rd=2  ID/EX_reg_write=1  ID/EX_imm=0  ID/EX_use_imm=0
+  EX/MEM_valid=1  EX/MEM_rd=1  EX/MEM_reg_write=1  EX/MEM_alu=5
+  MEM/WB_valid=0  MEM/WB_rd=0  MEM/WB_reg_write=0  MEM/WB_alu=0
+  WB: en=0  rd=0  data=0
+  Reg[1]=0  Reg[2]=0  Reg[5]=0
+  fwd_rs1=5  fwd_rs2=5  alu_result=a
+=== Cycle 4 ===
+  PC=10  IF/ID_valid=1  IF/ID_instr=40218233  IF/ID_pc=c
+  ID/EX_valid=1  ID/EX_rd=3  ID/EX_reg_write=1  ID/EX_imm=0  ID/EX_use_imm=0
+  EX/MEM_valid=1  EX/MEM_rd=2  EX/MEM_reg_write=1  EX/MEM_alu=a
+  MEM/WB_valid=1  MEM/WB_rd=1  MEM/WB_reg_write=1  MEM/WB_alu=5
+  WB: en=1  rd=1  data=5
+  Reg[1]=0  Reg[2]=0  Reg[5]=0
+  fwd_rs1=a  fwd_rs2=5  alu_result=f
+=== Cycle 5 ===
+  PC=14  IF/ID_valid=1  IF/ID_instr=ffd00293  IF/ID_pc=10
+  ID/EX_valid=1  ID/EX_rd=4  ID/EX_reg_write=1  ID/EX_imm=0  ID/EX_use_imm=0
+  EX/MEM_valid=1  EX/MEM_rd=3  EX/MEM_reg_write=1  EX/MEM_alu=f
+  MEM/WB_valid=1  MEM/WB_rd=2  MEM/WB_reg_write=1  MEM/WB_alu=a
+  WB: en=1  rd=2  data=a
+  Reg[1]=5  Reg[2]=0  Reg[5]=0
+  fwd_rs1=f  fwd_rs2=a  alu_result=5
+=== Cycle 6 ===
+  PC=18  IF/ID_valid=1  IF/ID_instr=0020f333  IF/ID_pc=14
+  ID/EX_valid=1  ID/EX_rd=5  ID/EX_reg_write=1  ID/EX_imm=fffffffd  ID/EX_use_imm=1
+  EX/MEM_valid=1  EX/MEM_rd=4  EX/MEM_reg_write=1  EX/MEM_alu=5
+  MEM/WB_valid=1  MEM/WB_rd=3  MEM/WB_reg_write=1  MEM/WB_alu=f
+  WB: en=1  rd=3  data=f
+  Reg[1]=5  Reg[2]=a  Reg[5]=0
+  fwd_rs1=0  fwd_rs2=0  alu_result=fffffffd
+=== Cycle 7 ===
+  PC=1c  IF/ID_valid=1  IF/ID_instr=0020e3b3  IF/ID_pc=18
+  ID/EX_valid=1  ID/EX_rd=6  ID/EX_reg_write=1  ID/EX_imm=0  ID/EX_use_imm=0
+  EX/MEM_valid=1  EX/MEM_rd=5  EX/MEM_reg_write=1  EX/MEM_alu=fffffffd
+  MEM/WB_valid=1  MEM/WB_rd=4  MEM/WB_reg_write=1  MEM/WB_alu=5
+  WB: en=1  rd=4  data=5
+  Reg[1]=5  Reg[2]=a  Reg[5]=0
+  fwd_rs1=5  fwd_rs2=a  alu_result=0
+=== Cycle 8 ===
+  PC=20  IF/ID_valid=1  IF/ID_instr=0020c433  IF/ID_pc=1c
+  ID/EX_valid=1  ID/EX_rd=7  ID/EX_reg_write=1  ID/EX_imm=0  ID/EX_use_imm=0
+  EX/MEM_valid=1  EX/MEM_rd=6  EX/MEM_reg_write=1  EX/MEM_alu=0
+  MEM/WB_valid=1  MEM/WB_rd=5  MEM/WB_reg_write=1  MEM/WB_alu=fffffffd
+  WB: en=1  rd=5  data=fffffffd
+  Reg[1]=5  Reg[2]=a  Reg[5]=0
+  fwd_rs1=5  fwd_rs2=a  alu_result=f
+=== Cycle 9 ===
+  PC=24  IF/ID_valid=1  IF/ID_instr=00209493  IF/ID_pc=20
+  ID/EX_valid=1  ID/EX_rd=8  ID/EX_reg_write=1  ID/EX_imm=0  ID/EX_use_imm=0
+  EX/MEM_valid=1  EX/MEM_rd=7  EX/MEM_reg_write=1  EX/MEM_alu=f
+  MEM/WB_valid=1  MEM/WB_rd=6  MEM/WB_reg_write=1  MEM/WB_alu=0
+  WB: en=1  rd=6  data=0
+  Reg[1]=5  Reg[2]=a  Reg[5]=fffffffd
+  fwd_rs1=5  fwd_rs2=a  alu_result=f
+=== Cycle 10 ===
+  PC=28  IF/ID_valid=1  IF/ID_instr=00115513  IF/ID_pc=24
+  ID/EX_valid=1  ID/EX_rd=9  ID/EX_reg_write=1  ID/EX_imm=2  ID/EX_use_imm=1
+  EX/MEM_valid=1  EX/MEM_rd=8  EX/MEM_reg_write=1  EX/MEM_alu=f
+  MEM/WB_valid=1  MEM/WB_rd=7  MEM/WB_reg_write=1  MEM/WB_alu=f
+  WB: en=1  rd=7  data=f
+  Reg[1]=5  Reg[2]=a  Reg[5]=fffffffd
+  fwd_rs1=5  fwd_rs2=a  alu_result=14
+=== Cycle 11 ===
+  PC=2c  IF/ID_valid=1  IF/ID_instr=4012d593  IF/ID_pc=28
+  ID/EX_valid=1  ID/EX_rd=10  ID/EX_reg_write=1  ID/EX_imm=1  ID/EX_use_imm=1
+  EX/MEM_valid=1  EX/MEM_rd=9  EX/MEM_reg_write=1  EX/MEM_alu=14
+  MEM/WB_valid=1  MEM/WB_rd=8  MEM/WB_reg_write=1  MEM/WB_alu=f
+  WB: en=1  rd=8  data=f
+  Reg[1]=5  Reg[2]=a  Reg[5]=fffffffd
+  fwd_rs1=a  fwd_rs2=5  alu_result=5
+=== Cycle 12 ===
+  PC=30  IF/ID_valid=1  IF/ID_instr=0012a633  IF/ID_pc=2c
+  ID/EX_valid=1  ID/EX_rd=11  ID/EX_reg_write=1  ID/EX_imm=1  ID/EX_use_imm=1
+  EX/MEM_valid=1  EX/MEM_rd=10  EX/MEM_reg_write=1  EX/MEM_alu=5
+  MEM/WB_valid=1  MEM/WB_rd=9  MEM/WB_reg_write=1  MEM/WB_alu=14
+  WB: en=1  rd=9  data=14
+  Reg[1]=5  Reg[2]=a  Reg[5]=fffffffd
+  fwd_rs1=fffffffd  fwd_rs2=5  alu_result=fffffffe
+
+================================================================
+     RV32I 5-STAGE PIPELINE VERIFICATION REPORT
+================================================================
+
+--- Performance Counters ---
+  Total Cycles      : 53
+  Stall Cycles      : 1
+  Retired Instrs    : 39
+  Halted            : 1
+  Trap Flag         : 1
+  Trap Cause        : 11
+  Trap PC           : 0x000000bc
+
+--- Register File Verification (x0 - x31) ---
+  [PASS] x0 = 0x00000000
+  [PASS] x1 = 0x00000005
+  [PASS] x2 = 0x0000000a
+  [PASS] x3 = 0x0000000f
+  [PASS] x4 = 0x00000005
+  [PASS] x5 = 0xfffffffd
+  [PASS] x6 = 0x00000000
+  [PASS] x7 = 0x0000000f
+  [PASS] x8 = 0x0000000f
+  [PASS] x9 = 0x00000014
+  [PASS] x10 = 0x00000005
+  [PASS] x11 = 0xfffffffe
+  [PASS] x12 = 0x00000001
+  [PASS] x13 = 0x00000001
+  [PASS] x14 = 0x12345000
+  [PASS] x15 = 0x00000038
+  [PASS] x16 = 0x00000005
+  [PASS] x17 = 0x0000000a
+  [PASS] x18 = 0x000000ff
+  [PASS] x19 = 0x000000ff
+  [PASS] x20 = 0xffffffff
+  [PASS] x21 = 0xfffffffd
+  [PASS] x22 = 0x0000fffd
+  [PASS] x23 = 0x0000002a
+  [PASS] x24 = 0x00000007
+  [PASS] x25 = 0x00000008
+  [PASS] x26 = 0x00000009
+  [PASS] x27 = 0x0000009c
+  [PASS] x28 = 0x0000000b
+  [PASS] x29 = 0x000000b8
+  [PASS] x30 = 0x000000b0
+  [PASS] x31 = 0x00000037
+
+================================================================
+          *** ALL TESTS PASSED ***
+================================================================
+
+$finish called at time : 585 ns : File "C:/Users/vedpa/project_COA _base/project_COA.srcs/sim_1/new/microprocessor_tb.v" Line 151

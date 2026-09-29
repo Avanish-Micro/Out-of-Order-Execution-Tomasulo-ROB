@@ -1,0 +1,38 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/Microprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module microprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/data_memory_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mem_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/instruc_mem_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruc_mem_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/memory2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/rv32i_decode_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32i_decode_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/rv32i_ex_mem_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32i_ex_mem_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/rv32i_execute_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32i_execute_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/rv32i_fetch_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32i_fetch_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/rv32i_forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32i_forwarding_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/rv32i_hazard_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32i_hazard_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/rv32i_id_ex_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32i_id_ex_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/rv32i_if_id_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32i_if_id_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/rv32i_mem_wb_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32i_mem_wb_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/rv32i_memory_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32i_memory_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sources_1/new/rv32i_writeback_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32i_writeback_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vedpa/project_COA _base/project_COA.srcs/sim_1/new/microprocessor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module microprocessor_tb

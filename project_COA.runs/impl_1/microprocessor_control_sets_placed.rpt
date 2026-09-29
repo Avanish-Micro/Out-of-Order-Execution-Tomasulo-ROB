@@ -1,0 +1,117 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2.1 (win64) Build 6403652 Thu Mar 19 19:48:24 GMT 2026
+| Date         : Sun Apr 19 05:13:13 2026
+| Host         : vision running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file microprocessor_control_sets_placed.rpt
+| Design       : microprocessor
+| Device       : xc7z010
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    39 |
+|    Minimum number of control sets                        |    39 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    10 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    39 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    37 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               2 |            1 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             556 |          174 |
+| Yes          | Yes                   | No                     |             992 |          459 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |            Enable Signal            | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-------------------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                                     | rst_IBUF         |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | u_core/u_if_id_reg/halted_reg       | rst_IBUF         |                4 |             13 |         3.25 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_10[0] | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | u_core/u_ex_mem_reg/p_0_in[0]       |                  |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | u_core/u_ex_mem_reg/p_0_in[1]       |                  |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | u_core/u_ex_mem_reg/p_0_in[2]       |                  |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | u_core/u_ex_mem_reg/p_0_in[3]       |                  |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_0[0]  | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_11[0] | rst_IBUF         |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_12[0] | rst_IBUF         |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_1[0]  | rst_IBUF         |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_13[0] | rst_IBUF         |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_18[0] | rst_IBUF         |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_19[0] | rst_IBUF         |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_21[0] | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_14[0] | rst_IBUF         |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_15[0] | rst_IBUF         |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_20[0] | rst_IBUF         |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_23[0] | rst_IBUF         |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/E[0]            | rst_IBUF         |               24 |             32 |         1.33 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_24[0] | rst_IBUF         |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_26[0] | rst_IBUF         |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_17[0] | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_27[0] | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_28[0] | rst_IBUF         |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_2[0]  | rst_IBUF         |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_16[0] | rst_IBUF         |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_22[0] | rst_IBUF         |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_25[0] | rst_IBUF         |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_29[0] | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_7[0]  | rst_IBUF         |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_5[0]  | rst_IBUF         |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_8[0]  | rst_IBUF         |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_4[0]  | rst_IBUF         |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_9[0]  | rst_IBUF         |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_6[0]  | rst_IBUF         |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG | u_core/u_mem_wb_reg/rd_reg[2]_3[0]  | rst_IBUF         |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG |                                     |                  |               32 |            128 |         4.00 |
+|  clk_IBUF_BUFG | u_core/u_id_ex_reg/halted_reg       | rst_IBUF         |              170 |            543 |         3.19 |
++----------------+-------------------------------------+------------------+------------------+----------------+--------------+
+
+

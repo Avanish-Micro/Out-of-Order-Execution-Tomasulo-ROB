@@ -1,0 +1,121 @@
+// Wire declarations for OOO Core - included by Core.v
+wire [31:0] if_id_pc, if_id_instruction;
+wire if_id_valid;
+wire [4:0] dec_rs1_addr, dec_rs2_addr, dec_rd;
+wire [2:0] dec_funct3;
+wire [31:0] dec_imm;
+wire [3:0] dec_alu_op;
+wire [1:0] dec_wb_sel;
+wire dec_reg_write, dec_mem_read, dec_mem_write, dec_use_pc, dec_use_imm;
+wire dec_branch, dec_jal, dec_jalr, dec_rs1_used, dec_rs2_used;
+wire dec_illegal, dec_ecall, dec_ebreak;
+wire [31:0] rf_rs1_data, rf_rs2_data;
+wire rat_rs1_valid, rat_rs2_valid;
+wire [1:0] rat_rs1_tag, rat_rs2_tag;
+wire [1:0] rob_read_tag_rs1, rob_read_tag_rs2;
+wire rob_read_ready_rs1, rob_read_ready_rs2;
+wire [31:0] rob_read_value_rs1, rob_read_value_rs2;
+wire [1:0] rob_alloc_tag;
+wire rob_alloc_ready, rob_alloc_req;
+wire rat_rename_en;
+wire [4:0] rat_rename_rd;
+wire [1:0] rat_rename_tag;
+wire alu_rs_full, load_rs_full, store_rs_full;
+wire dispatch_stall;
+wire [4:0] rob_alloc_rd_w;
+wire [31:0] rob_alloc_pc_w;
+wire rob_alloc_is_store_w, rob_alloc_is_load_w, rob_alloc_is_branch_w;
+wire [1:0] rob_alloc_wb_sel_w;
+wire rob_alloc_reg_write_w;
+wire [2:0] rob_alloc_funct3_w;
+wire rob_alloc_ecall_w, rob_alloc_ebreak_w, rob_alloc_illegal_w;
+// ALU RS issue wires
+wire alu_rs_issue;
+wire [1:0] alu_rs_rob_tag;
+wire [3:0] alu_rs_alu_op;
+wire alu_rs_s1_rdy, alu_rs_s2_rdy;
+wire [1:0] alu_rs_s1_tag, alu_rs_s2_tag;
+wire [31:0] alu_rs_s1_val, alu_rs_s2_val;
+wire [31:0] alu_rs_imm, alu_rs_pc;
+wire alu_rs_use_pc, alu_rs_use_imm;
+wire [2:0] alu_rs_funct3;
+wire alu_rs_is_branch, alu_rs_jal, alu_rs_jalr;
+wire [1:0] alu_rs_wb_sel;
+// Load RS issue wires
+wire ld_rs_issue;
+wire [1:0] ld_rs_rob_tag;
+wire [3:0] ld_rs_alu_op;
+wire ld_rs_s1_rdy, ld_rs_s2_rdy;
+wire [1:0] ld_rs_s1_tag, ld_rs_s2_tag;
+wire [31:0] ld_rs_s1_val, ld_rs_s2_val;
+wire [31:0] ld_rs_imm, ld_rs_pc;
+wire [2:0] ld_rs_funct3;
+wire [1:0] ld_rs_wb_sel;
+// Store RS issue wires
+wire st_rs_issue;
+wire [1:0] st_rs_rob_tag;
+wire [3:0] st_rs_alu_op;
+wire st_rs_s1_rdy, st_rs_s2_rdy;
+wire [1:0] st_rs_s1_tag, st_rs_s2_tag;
+wire [31:0] st_rs_s1_val, st_rs_s2_val;
+wire [31:0] st_rs_imm, st_rs_pc;
+wire [2:0] st_rs_funct3;
+// ALU RS dispatch wires
+wire alu_d_valid, alu_d_ack;
+wire [1:0] alu_d_rob_tag;
+wire [3:0] alu_d_alu_op;
+wire [31:0] alu_d_s1, alu_d_s2, alu_d_imm, alu_d_pc;
+wire alu_d_use_pc, alu_d_use_imm;
+wire [2:0] alu_d_funct3;
+wire alu_d_is_branch, alu_d_jal, alu_d_jalr;
+wire [1:0] alu_d_wb_sel;
+wire alu_d_mem_read, alu_d_mem_write;
+// Load RS dispatch wires
+wire ld_d_valid, ld_d_ack;
+wire [1:0] ld_d_rob_tag;
+wire [31:0] ld_d_s1, ld_d_s2, ld_d_imm, ld_d_pc;
+wire [2:0] ld_d_funct3;
+wire [1:0] ld_d_wb_sel;
+wire ld_d_mem_read;
+// Store RS dispatch wires
+wire st_d_valid, st_d_ack;
+wire [1:0] st_d_rob_tag;
+wire [31:0] st_d_s1, st_d_s2, st_d_imm, st_d_pc;
+wire [2:0] st_d_funct3;
+wire st_d_mem_write;
+// CDB wires
+wire cdb_valid;
+wire [1:0] cdb_tag;
+wire [31:0] cdb_value;
+wire cdb_branch_taken;
+wire [31:0] cdb_branch_target;
+wire cdb_trap_valid;
+wire [31:0] cdb_trap_cause;
+wire [31:0] cdb_store_addr, cdb_store_data;
+wire [3:0] cdb_store_mask;
+wire cdb_alu_valid, cdb_ld_valid, cdb_st_valid;
+wire [1:0] cdb_alu_tag, cdb_ld_tag, cdb_st_tag;
+wire [31:0] cdb_alu_value, cdb_ld_value;
+wire cdb_alu_bt, cdb_alu_tv;
+wire [31:0] cdb_alu_btgt, cdb_alu_tc;
+wire [31:0] cdb_st_addr, cdb_st_data;
+wire [3:0] cdb_st_mask;
+// Commit wires
+wire commit_valid, commit_reg_write, commit_is_store, commit_is_branch;
+wire commit_branch_taken, commit_trap_valid, commit_ack;
+wire [4:0] commit_rd;
+wire [31:0] commit_value, commit_store_addr, commit_store_data;
+wire [3:0] commit_store_mask;
+wire [2:0] commit_funct3;
+wire [31:0] commit_branch_target, commit_pc, commit_trap_cause;
+wire [1:0] commit_tag;
+wire rob_full, rob_empty;
+// Fetch wires
+wire [31:0] fetch_next_pc;
+wire fetch_if_id_valid_next;
+wire [31:0] fetch_if_id_pc_next, fetch_if_id_instruction_next;
+// Flush/control
+wire flush_pipeline;
+wire load_mem_req;
+wire [31:0] load_mem_addr;
+wire [2:0] load_mem_funct3;
